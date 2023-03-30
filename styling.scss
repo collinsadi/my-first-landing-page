@@ -1,0 +1,636 @@
+$primary-color:#1264ff;
+$standard-text:white;
+$low-standard-text:rgba(255, 255, 255, 0.26);
+$mobile:720px;
+$needed-color:black;
+$gray:rgb(70, 69, 69);
+
+
+// Custom Scrollbar for browsers on big screen 
+
+
+::-webkit-scrollbar-track{
+    background-color: $standard-text;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+   padding: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $primary-color;
+    border: 3px solid $standard-text;
+    
+}
+
+// Website Body 
+
+
+body{
+    background-color: $primary-color;
+}
+
+
+    // Main Desktop Header Styling
+
+
+.mainheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px 0;
+    .logo img{
+        width: 200px;
+        margin-left: 30px;
+
+    }
+    .calltoaction{
+        margin-right: 60px;
+
+        a{
+            color: $standard-text;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: $low-standard-text;
+            
+        }
+    }
+    .navlist a{
+        color:$standard-text;
+        text-decoration: none;
+        margin-left: 20px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       
+    }
+
+}
+
+    // Styling for the first section of the website
+
+
+.first-div{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 150px;
+   
+    h2{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 0;
+        color: $standard-text;
+    }
+    p{
+        color:$standard-text;
+        font-size: 15px;
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+    .platforms{
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+        .apple{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            width: 40%;
+            background-color: $standard-text;
+            border-radius: 30px;
+           h4{
+            margin-left:15px;
+           }
+          
+        }
+        .googleplay{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            width: 40%;
+            background-color: $standard-text;
+            border-radius: 30px;
+            h4{
+                margin-left:15px;
+               }
+              
+        }
+        .geton{
+            color: $needed-color;
+            font-size: 25px;
+            
+        }
+        .geton2{
+            color: $needed-color;
+            font-size: 30px;
+        }
+    }
+    .first-hero{
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .first-hero img{
+            width: 100%;
+        }
+    }
+}
+
+    // Responsiveness for Mobile Header
+
+
+@media (max-width:$mobile){
+    .mainheader{
+        display: none;
+    }
+    
+    .mobile{
+
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px 0;
+    .logomobile{
+        width: 40%;
+      
+    }
+    .logomobile img{
+        width: 100%;
+    }
+    #menu-toggle{
+        margin-right: 10px;
+    }
+.harmburger{
+    width: 30px;
+    height: 4px;
+    background-color: $standard-text;
+    margin-top: 3px;
+    border-radius: 15px;
+}
+.todo{
+    width:20px ;
+    margin-left: 10px;
+}
+    }
+    #mobilepanel{
+        height: 100%;
+        position: fixed;
+        width: 100%;
+        background-color: $primary-color;
+       display: none;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        // display: none;
+        .mobilelogo{
+            margin: 0 auto;
+            width: 50%;
+            margin-top: 100px;
+            
+        }
+        .mobilelogo img{
+                width: 100%;
+            }
+       
+        .mobilenavlist{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 100px;
+        }
+        
+        .mobilenavlist a{
+            
+            
+            color:$standard-text;
+        text-decoration: none;
+     
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: block;
+        font-weight: bold;
+        
+       
+        }
+        .socialicons{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: center;
+            margin-top: 25px;
+        }
+        .socialicon{
+            color: $standard-text;
+            margin-left:4px;
+            font-size: 25px;
+        }
+        .closeicon{
+            float: right;
+            font-size:25px;
+            color: white;
+            margin: 25px;
+        }
+    }
+}
+
+
+
+
+// Responsiveness to disable mobile assets for desktop
+
+@media (min-width:$mobile){
+    .mobile{
+        display: none;
+    }
+    #mobilepanel{
+        display: none;
+        
+    }
+}
+
+// Styling for the first section of the website for mobile devices
+
+@media (max-width:$mobile){
+
+    .first-div{
+        width: 100%; 
+        margin-top: 70px; 
+        h2{
+             font-size: 30px;
+             text-align: center;
+        }
+        p{
+            font-size: 10px;
+        }
+        .platforms{
+            width:50%;
+            display: block;
+            margin-top: 40px;
+            .apple{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background-color: $standard-text;
+                border-radius: 30px;
+               h4{
+                margin-left:15px;
+               }
+              
+            }
+            .googleplay{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background-color: $standard-text;
+                border-radius: 30px;
+                margin-top: 10px;
+                h4{
+                    margin-left:15px;
+                   }
+                  
+            }
+            .geton{
+                color: $needed-color;
+                font-size: 25px;
+                
+            }
+            .geton2{
+                color: $needed-color;
+                font-size: 30px;
+            }
+        }
+        .first-hero{
+            width: 100%;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        img{
+                width: 100%;
+                margin-top: 65px;
+            }
+        }
+    }
+
+}
+
+// Second white section of the website
+
+.second-div{
+    position: absolute;
+    width: 100%;
+    background-color: $standard-text;
+    left: 0;
+    
+    padding: 50px 0;
+    .content-of-second-div{
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    }
+  h3{
+            font-weight: bolder;
+            font-size: 30px;
+            margin-bottom: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    p{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .smallbtc{
+        font-size: 15px;
+    }
+}
+
+// Responsiveness for Second whitw section of the website
+
+@media (max-width:$mobile){
+    .second-div{
+        .content-of-second-div{
+            margin: 0 auto;
+            width: 80%;
+            display: block;
+            text-align: center;
+        }
+        h3{
+            
+            font-weight: bolder;
+            font-size: 30px;
+            margin-bottom: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+}
+
+// Third black section of the website
+
+.third-div{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: $needed-color;
+    margin-top: 200px;
+    padding-bottom: 30px;
+    p{
+        color: $standard-text;
+        text-align: center;
+        font-size: 15px;
+    }
+    h3{
+        color: $standard-text;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .secon-3-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:0 auto;
+        padding: 20px;
+        width: 80%;
+        .box{
+            height: 300px;
+            width: 40%;
+            margin-right: 50px;
+            background-color: $gray;
+            border-radius: 20px;
+        }
+        .swapanytime{
+            width: 40%;
+            margin-left: 50px;
+            p{
+                color: $primary-color;
+                text-align: left;
+                margin-top: 0;
+            }
+            h3{
+                color: $standard-text;
+                text-align: left;
+            }
+            .fa-shield{
+                text-align: left;
+                color: $primary-color;
+                display: inline-block;
+                font-size: 15px;
+              
+
+            }
+            .shield{
+                color: $standard-text;
+                display: inline-block;
+                font-size: 15px;
+                margin-left: 15px;
+               
+            }
+            .fa-rocket{
+                text-align: left;
+                color: $primary-color;
+                font-size: 15px;
+            }
+        
+        }
+    }
+}
+
+// Responsiveness for third black section of the website
+
+@media (max-width:$mobile){
+    .third-div{
+        margin-top: 400px;
+        padding: 0;
+        right: 0;
+
+    .secon-3-div{
+       display: block;
+        margin:0;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+   
+    .box{
+            width: 80%;
+            margin: 0 10%;
+            
+        }
+     .swapanytime{
+            width: 80%;
+            margin: 0;
+            margin-left: 10%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    }
+}
+
+
+// Last Section of the home page
+
+
+.fourth-div{
+    position: absolute;
+    width: 100%;
+    background-color: $standard-text;
+    left: 0;
+    margin-top: 1100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    p{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 0;
+    }
+    .feeedback{
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: $primary-color;
+            font-weight: bold;
+        }
+    }
+      .worldmap{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+      }
+      .downloadapp{
+        width: 80%;
+    margin: 0 10%;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 120px;
+    padding: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    .phone{
+        width: 45%;
+        
+     
+    img{
+            width: 200px;
+            float: right;
+        }
+      }
+      .writeup{
+        color: $standard-text;
+        width: 50%;
+        p{
+            text-align: left;
+            margin-left: 48px;
+        }
+       h3{
+        font-size: 20px;
+        text-align: left;
+        margin-left: 48px
+        ;
+       }
+      }
+      .platformsbottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+       .apple{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            width: 40%;
+            background-color: $needed-color;
+            border-radius: 30px;
+           h4{
+            margin-left:15px;
+           }
+          
+        }
+        .googleplay{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            width: 40%;
+            background-color: $needed-color;
+            border-radius: 30px;
+            h4{
+                margin-left:15px;
+               }
+              
+        }
+      }
+      }
+      
+}
+
+
+// Responsiveness
+
+@media (max-width:$mobile){
+    
+    .fourth-div{
+        width: 100%;
+        margin-top: 1700px;
+        h4{
+            font-size: 20px;
+        }
+    .downloadapp{
+        display: none;
+    }
+    .phone{
+        width: 100%;
+        }
+     
+    img{
+            width: 150px;
+            float:none;
+        }
+        .writeup{
+            width: 100%;
+            p{
+                text-align: center;
+                margin-left: 5px;
+            }
+            h3{
+                font-size: 15px;
+                text-align: center;
+                margin-left: 0;
+            }
+        }
+
+
+}}

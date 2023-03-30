@@ -1,0 +1,536 @@
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  padding: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1264ff;
+  border: 3px solid white;
+}
+
+body {
+  background-color: #1264ff;
+}
+
+.mainheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 20px 0;
+}
+.mainheader .logo img {
+  width: 200px;
+  margin-left: 30px;
+}
+.mainheader .calltoaction {
+  margin-right: 60px;
+}
+.mainheader .calltoaction a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.26);
+}
+.mainheader .navlist a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.first-div {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 150px;
+}
+.first-div h2 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 0;
+  color: white;
+}
+.first-div p {
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+.first-div .platforms {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+.first-div .platforms .apple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 40%;
+  background-color: white;
+  border-radius: 30px;
+}
+.first-div .platforms .apple h4 {
+  margin-left: 15px;
+}
+.first-div .platforms .googleplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 40%;
+  background-color: white;
+  border-radius: 30px;
+}
+.first-div .platforms .googleplay h4 {
+  margin-left: 15px;
+}
+.first-div .platforms .geton {
+  color: black;
+  font-size: 25px;
+}
+.first-div .platforms .geton2 {
+  color: black;
+  font-size: 30px;
+}
+.first-div .first-hero {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-div .first-hero .first-hero img {
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .mainheader {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px 0;
+  }
+  .mobile .logomobile {
+    width: 40%;
+  }
+  .mobile .logomobile img {
+    width: 100%;
+  }
+  .mobile #menu-toggle {
+    margin-right: 10px;
+  }
+  .mobile .harmburger {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin-top: 3px;
+    border-radius: 15px;
+  }
+  .mobile .todo {
+    width: 20px;
+    margin-left: 10px;
+  }
+  #mobilepanel {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    background-color: #1264ff;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  #mobilepanel .mobilelogo {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 100px;
+  }
+  #mobilepanel .mobilelogo img {
+    width: 100%;
+  }
+  #mobilepanel .mobilenavlist {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 100px;
+  }
+  #mobilepanel .mobilenavlist a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    font-weight: bold;
+  }
+  #mobilepanel .socialicons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 25px;
+  }
+  #mobilepanel .socialicon {
+    color: white;
+    margin-left: 4px;
+    font-size: 25px;
+  }
+  #mobilepanel .closeicon {
+    float: right;
+    font-size: 25px;
+    color: white;
+    margin: 25px;
+  }
+}
+@media (min-width: 720px) {
+  .mobile {
+    display: none;
+  }
+  #mobilepanel {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .first-div {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .first-div h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .first-div p {
+    font-size: 10px;
+  }
+  .first-div .platforms {
+    width: 50%;
+    display: block;
+    margin-top: 40px;
+  }
+  .first-div .platforms .apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+  }
+  .first-div .platforms .apple h4 {
+    margin-left: 15px;
+  }
+  .first-div .platforms .googleplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+  .first-div .platforms .googleplay h4 {
+    margin-left: 15px;
+  }
+  .first-div .platforms .geton {
+    color: black;
+    font-size: 25px;
+  }
+  .first-div .platforms .geton2 {
+    color: black;
+    font-size: 30px;
+  }
+  .first-div .first-hero {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-div .first-hero img {
+    width: 100%;
+    margin-top: 65px;
+  }
+}
+.second-div {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  left: 0;
+  padding: 50px 0;
+}
+.second-div .content-of-second-div {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.second-div h3 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-bottom: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.second-div p {
+  font-family: "Courier New", Courier, monospace;
+}
+.second-div .smallbtc {
+  font-size: 15px;
+}
+
+@media (max-width: 720px) {
+  .second-div .content-of-second-div {
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    text-align: center;
+  }
+  .second-div h3 {
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+.third-div {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  margin-top: 200px;
+  padding-bottom: 30px;
+}
+.third-div p {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+.third-div h3 {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.third-div .secon-3-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+}
+.third-div .secon-3-div .box {
+  height: 300px;
+  width: 40%;
+  margin-right: 50px;
+  background-color: rgb(70, 69, 69);
+  border-radius: 20px;
+}
+.third-div .secon-3-div .swapanytime {
+  width: 40%;
+  margin-left: 50px;
+}
+.third-div .secon-3-div .swapanytime p {
+  color: #1264ff;
+  text-align: left;
+  margin-top: 0;
+}
+.third-div .secon-3-div .swapanytime h3 {
+  color: white;
+  text-align: left;
+}
+.third-div .secon-3-div .swapanytime .fa-shield {
+  text-align: left;
+  color: #1264ff;
+  display: inline-block;
+  font-size: 15px;
+}
+.third-div .secon-3-div .swapanytime .shield {
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 15px;
+}
+.third-div .secon-3-div .swapanytime .fa-rocket {
+  text-align: left;
+  color: #1264ff;
+  font-size: 15px;
+}
+
+@media (max-width: 720px) {
+  .third-div {
+    margin-top: 400px;
+    padding: 0;
+    right: 0;
+  }
+  .third-div .secon-3-div {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .third-div .secon-3-div .box {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .third-div .secon-3-div .swapanytime {
+    width: 80%;
+    margin: 0;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.fourth-div {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  left: 0;
+  margin-top: 1100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.fourth-div p {
+  text-align: center;
+}
+.fourth-div h3 {
+  text-align: center;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0;
+}
+.fourth-div .feeedback {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fourth-div .feeedback a {
+  text-decoration: none;
+  color: #1264ff;
+  font-weight: bold;
+}
+.fourth-div .worldmap {
+  width: 100%;
+}
+.fourth-div .worldmap img {
+  width: 100%;
+}
+.fourth-div .downloadapp {
+  width: 80%;
+  margin: 0 10%;
+  background-color: #1264ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 120px;
+  padding: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.fourth-div .downloadapp .phone {
+  width: 45%;
+}
+.fourth-div .downloadapp .phone img {
+  width: 200px;
+  float: right;
+}
+.fourth-div .downloadapp .writeup {
+  color: white;
+  width: 50%;
+}
+.fourth-div .downloadapp .writeup p {
+  text-align: left;
+  margin-left: 48px;
+}
+.fourth-div .downloadapp .writeup h3 {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 48px;
+}
+.fourth-div .downloadapp .platformsbottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fourth-div .downloadapp .platformsbottom .apple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 40%;
+  background-color: black;
+  border-radius: 30px;
+}
+.fourth-div .downloadapp .platformsbottom .apple h4 {
+  margin-left: 15px;
+}
+.fourth-div .downloadapp .platformsbottom .googleplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 40%;
+  background-color: black;
+  border-radius: 30px;
+}
+.fourth-div .downloadapp .platformsbottom .googleplay h4 {
+  margin-left: 15px;
+}
+
+@media (max-width: 720px) {
+  .fourth-div {
+    width: 100%;
+    margin-top: 1700px;
+  }
+  .fourth-div h4 {
+    font-size: 20px;
+  }
+  .fourth-div .downloadapp {
+    display: none;
+  }
+  .fourth-div .phone {
+    width: 100%;
+  }
+  .fourth-div img {
+    width: 150px;
+    float: none;
+  }
+  .fourth-div .writeup {
+    width: 100%;
+  }
+  .fourth-div .writeup p {
+    text-align: center;
+    margin-left: 5px;
+  }
+  .fourth-div .writeup h3 {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=styling.css.map */
